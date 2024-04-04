@@ -2,9 +2,17 @@ package rocketseat.com.passin.domain.event;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "events")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Event {
     @Id
     @Column(nullable = false)
@@ -15,9 +23,13 @@ public class Event {
     private String title;
 
     @Column(nullable = false)
-    private String detail;
+    private String details;
 
     @Column(nullable = false, unique = true)
     private String slug;
+
+    @Column(nullable = false, name = "maximum_attendees")
+    private Integer maximumAttendees;
+
 
 }
