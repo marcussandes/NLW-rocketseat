@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 1034
+SET FILES CHECK 2100
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -50,3 +50,11 @@ INSERT INTO BLOCKS VALUES(0,2147483647,0)
 SET SCHEMA PUBLIC
 INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1__create-table-events.sql',1697759344,'SA','2024-04-03 15:24:46.841857',8,'1')
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',1277907498,'SA','2024-04-03 15:41:07.189897',21,'0')
+INSERT INTO EVENTS VALUES('15d3d441-ee3f-48c5-8a11-1ffed32e215d','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('43c0ffef-96b8-4f04-a268-366a074a0dac','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('72b6ea20-db85-4c12-9241-588044324c81','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('7f925ff8-0a9d-41eb-bf2a-d947c37fd1e9','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('945044d4-6102-439d-9681-0d69425b842e','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('d7076e90-596a-4047-b154-c4c995205e98','Rocketseat NLW Unite','Aprenda v\u00e1rias tecnologias de forma Gratuita e online!','rocketseat-nlw-unite',1000)
+INSERT INTO EVENTS VALUES('e784879b-b401-461c-9caf-2338cd05ce1c','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('e9c47920-64f0-4503-8ac1-70f31aae9e1f','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
